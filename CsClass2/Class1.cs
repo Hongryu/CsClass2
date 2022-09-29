@@ -14,4 +14,17 @@ namespace CsClass2
             this.Value = Value;
         }
     }
+
+
+    class Class1
+    {
+
+        public int this[int i]
+        {
+            get { return i; }
+            set { Console.WriteLine(i + "번째 상품 설명"); }
+        }
+
+    }
+
 }

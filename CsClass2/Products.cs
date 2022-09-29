@@ -9,11 +9,17 @@ namespace CsClass2
     class Products
     {
 
-        public int this[int i]
-            {
-            get{return i; }
-            set { Console.WriteLine(i+"번째 상품 설명"); }
-            }
+        public void Dispose()
+        {
+            Console.WriteLine("Dispose() 메서드를 호출합니다.");
+        }
 
+    }
+    static void Main(String[] args)
+    {
+        using (Product product = new Product())
+        {
+
+        }
     }
 }
